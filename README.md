@@ -169,10 +169,17 @@ quiz-app/
 ```
 
 ## Preview
-![Quiz App Screenshot](screenshots/Quiz-start.png)
 
-![Timer-warning](screenshots/Last-timer.png)
+<img src="screenshots/Quiz-start.png" alt="Quiz App Screenshot" width="400"/>
 
-![time-up at quiz page](screenshots/time-up-at-quiz.png)
+---
 
-![time-up at result page](screenshots/Time-up-at-result.png)
+<img src="screenshots/Last-timer.png" alt="Timer warning" width="400"/>
+
+---
+
+<img src="screenshots/time-up-at-quiz.png" alt="Time up at quiz page" width="400"/>
+
+---
+
+<img src="screenshots/Time-up-at-result.png" alt="Time up at result page" width="400"/>
