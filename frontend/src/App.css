@@ -1,0 +1,153 @@
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px 0;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.btn {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.option-item .btn {
+  padding: 12px 20px;
+  text-align: left;
+  border: 2px solid #dee2e6;
+}
+
+.option-item .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.option-item .btn-primary {
+  border-color: #0d6efd;
+}
+
+.question-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #dee2e6;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  border-color: #0d6efd;
+  background: #0d6efd;
+  color: white;
+}
+
+.dot.answered {
+  border-color: #198754;
+  background: #198754;
+  color: white;
+}
+
+.dot:hover {
+  transform: scale(1.1);
+}
+
+.progress {
+  border-radius: 10px;
+}
+
+.progress-bar {
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.timer {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+}
+
+.score-display {
+  font-weight: bold;
+}
+
+.performance-badge {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background: #f8f9fa;
+  display: inline-block;
+}
+
+.result-item {
+  background: #f8f9fa;
+  transition: transform 0.2s ease;
+}
+
+.result-item:hover {
+  transform: translateY(-2px);
+}
+
+.option-key {
+  font-weight: bold;
+  background: rgba(0,0,0,0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px 0;
+  }
+  
+  .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  .dot {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Pulsing animation for critical timer */
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Time progress styles */
+.time-progress .progress-bar {
+  transition: width 1s linear;
+}
+
+/* Alert styles for timeout */
+.alert-warning {
+  border-left: 4px solid #ffc107;
+  border-right: 4px solid #ffc107;
+}
