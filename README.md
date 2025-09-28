@@ -168,5 +168,11 @@ quiz-app/
 
 ```
 
-## How to Set-up
+## Preview
+![Quiz App Screenshot](screenshots/Quiz-start.png)
 
+![Timer-warning](screenshots/Last-timer.png)
+
+![time-up at quiz page](screenshots/time-up-at-quiz.png)
+
+![time-up at result page](screenshots/Time-up-at-result.png)
